@@ -1,0 +1,134 @@
+team,region,tier,prev_rank
+Ohio State,central,1,1
+Michigan,central,1,2
+Pittsburgh,central,1,3
+Penn State,central,1,4
+Notre Dame,central,1,5
+Missouri,central,1,6
+Arkansas,central,1,7
+Kentucky,central,1,8
+Alabama,east,1,1
+Maryland,east,1,2
+Mississippi State,east,1,3
+Florida,east,1,4
+Georgia,east,1,5
+Ole Miss,east,1,6
+NC State,east,1,7
+LSU,east,1,8
+Oklahoma,west,1,1
+Nebraska,west,1,2
+USC,west,1,3
+Texas,west,1,4
+Colorado,west,1,5
+Texas A&M,west,1,6
+UCLA,west,1,7
+Texas Tech,west,1,8
+Yale,central,2,1
+Iowa State,central,2,2
+Rutgers,central,2,3
+Miami (OH),central,2,4
+Cincinnati,central,2,5
+West Virginia,central,2,6
+Michigan State,central,2,7
+Temple,central,2,8
+East Carolina,east,2,1
+Southern Miss,east,2,2
+Auburn,east,2,3
+Tennessee,east,2,4
+Louisiana Tech,east,2,5
+Miami,east,2,6
+South Carolina,east,2,7
+North Carolina,east,2,8
+Oklahoma State,west,2,1
+San Diego State,west,2,2
+California,west,2,3
+BYU,west,2,4
+Stanford,west,2,5
+Washington,west,2,6
+Houston,west,2,7
+Arizona State,west,2,8
+Harvard,central,3,1
+Navy,central,3,2
+Ball State,central,3,3
+Brown,central,3,4
+Bowling Green,central,3,5
+Dartmouth,central,3,6
+Kent State,central,3,7
+Boston College,central,3,8
+Memphis,east,3,1
+Duke,east,3,2
+Clemson,east,3,3
+Louisiana,east,3,4
+Georgia Tech,east,3,5
+Florida State,east,3,6
+William & Mary,east,3,7
+Richmond,east,3,8
+North Texas,west,3,1
+Baylor,west,3,2
+Kansas,west,3,3
+San José State,west,3,4
+Fresno State,west,3,5
+Arizona,west,3,6
+Washington State,west,3,7
+Tulsa,west,3,8
+Virginia Tech,central,4,1
+Minnesota,central,4,2
+Central Michigan,central,4,3
+Syracuse,central,4,4
+Colgate,central,4,5
+Arkansas State,central,4,6
+Purdue,central,4,7
+Ohio,central,4,8
+Chattanooga,east,4,1
+App State,east,4,2
+McNeese,east,4,3
+Vanderbilt,east,4,4
+Furman,east,4,5
+VMI,east,4,6
+The Citadel,east,4,7
+Tulane,east,4,8
+SMU,west,4,1
+Colorado State,west,4,2
+Kansas State,west,4,3
+New Mexico,west,4,4
+Utah State,west,4,5
+West Texas A&M,west,4,6
+Hawai'i,west,4,7
+Wyoming,west,4,8
+Princeton,central,5,1
+Illinois,central,5,2
+Wisconsin,central,5,3
+Louisville,central,5,4
+Villanova,central,5,5
+Iowa,central,5,6
+Western Michigan,central,5,7
+Pennsylvania,central,5,8
+Wake Forest,east,5,1
+Northwestern State,east,5,2
+Virginia,east,5,3
+UL Monroe,east,5,4
+Western Carolina,east,5,5
+Oregon State,west,5,1
+Oregon,west,5,2
+Rice,west,5,3
+Air Force,west,5,4
+New Mexico State,west,5,5
+Lamar,west,5,6
+TCU,west,5,7
+Utah,west,5,8
+Indiana,central,6,1
+Eastern Michigan,central,6,2
+Army,central,6,3
+Toledo,central,6,4
+Cornell,central,6,5
+Columbia,central,6,6
+Indiana State,central,6,7
+Holy Cross,central,6,8
+UTEP,west,6,1
+UNLV,west,6,2
+Northwestern,central,7,1
+Southern Illinois,central,7,2
+Northern Illinois,central,7,3
+Illinois State,central,7,4
+Marshall,central,7,5
+Drake,central,7,6
