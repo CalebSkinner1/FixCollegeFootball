@@ -34,6 +34,12 @@ results_list <- simulate_years(
   regions
 )
 
+saveRDS(
+  results_list,
+  file = "simulation_world/data/example_results.rds"
+)
+
+
 # print cfp champions
 cfp_champs(results_list)$year_by_year |> print(n = 48)
 cfp_champs(results_list)$champs_total |> print(n = 30)
