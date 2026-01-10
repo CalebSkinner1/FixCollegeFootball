@@ -148,7 +148,10 @@ reset_this_tier <- function(
       this_region <- .x$region[1]
       locks <- .x$locks[1]
 
-      # add teams that aren't moving in, but also can't drop
+      if(standings |> filter(region == this_region, tier == this_tier + 1) |> nrow() == 0){
+        auto_drop_tibble <- standings |> slice(0)
+      }else{
+              # add teams that aren't moving in, but also can't drop
       protected_teams <- standings |>
         filter(
           region == this_region,
@@ -158,9 +161,11 @@ reset_this_tier <- function(
         ) |>
         nrow()
 
-      standings |>
+      auto_drop_tibble <- standings |>
         filter(region == this_region, team %!in% locked_teams, tier == this_tier) |>
         slice_tail(n = (locks - 4 - protected_teams))
+      }
+      auto_drop_tibble
     }
   ) |>
     pull(team)

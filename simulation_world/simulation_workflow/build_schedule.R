@@ -114,7 +114,7 @@ replace_missing_games <- function(
   needed_games <- 12 - length(existing_games)
 
   # preference one: same region
-  tier_tibblenew_games <- missing_games_tibble |>
+  new_games <- missing_games_tibble |>
     filter(region == this_region, team %!in% c(existing_games, this_team)) |>
     slice(c(1:needed_games)) |>
     pull(team)

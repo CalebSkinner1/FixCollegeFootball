@@ -12,7 +12,8 @@ simulate_years <- function(
   regions,
   home_field_advantage = 2.5,
   start_year = 1978,
-  end_year = 2025
+  end_year = 2025,
+  print = TRUE
 ) {
   all_results <- tibble()
   this_year <- start_year
@@ -20,7 +21,9 @@ simulate_years <- function(
   tier_years <- tier_tibble |> mutate(year = this_year)
   prev_schedules <- NULL
   while (this_year <= end_year) {
-    print(str_c("simulating year ", this_year))
+    if(print){
+      print(str_c("simulating year ", this_year))
+    }
     year_list <- simulate_year(
       tier_tibble,
       sp_rankings,
@@ -30,6 +33,9 @@ simulate_years <- function(
       prev_schedules,
       this_year
     )
+    if(year_list$new_tiers |> nrow() != year_list$new_tiers |> distinct(team) |> nrow()){
+      stop()
+    }
     tier_tibble <- year_list$new_tiers
     all_results <- bind_rows(
       year_list$results |> mutate(year = this_year),
@@ -82,7 +88,7 @@ simulate_year <- function(
     home_field_advantage
   )
 
-  season_list$standings |> filter(wins < 0)
+  # season_list$standings |> filter(wins < 0)
 
   # reset tiers
   new_tiers <- reset_tiers(
@@ -92,6 +98,9 @@ simulate_year <- function(
     sp_next,
     regions
   )
+
+
+
 
   list(
     "results" = season_list$results,
