@@ -77,7 +77,7 @@ playoff_app <- function(results_list) {
 }
 
 # print a teams tier journey
-tier_journey <- function(results_list, this_team) {
+tier_journey <- function(results_list, this_team, interactive = TRUE) {
   tiers <- results_list$tiers |> filter(team == this_team)
 
   record <- results_list$results |>
@@ -102,7 +102,11 @@ tier_journey <- function(results_list, this_team) {
       geom_point(aes(text = paste0("Record: ", record)), size = .1)
   )
 
-  ggplotly(p, tooltip = c("x", "y", "text"))
+  if (interactive) {
+    ggplotly(p, tooltip = c("x", "y", "text"))
+  } else {
+    p
+  }
 }
 
 # print win percentage against teams
