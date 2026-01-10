@@ -82,6 +82,8 @@ simulate_year <- function(
     home_field_advantage
   )
 
+  season_list$standings |> filter(wins < 0)
+
   # reset tiers
   new_tiers <- reset_tiers(
     tier_tibble,

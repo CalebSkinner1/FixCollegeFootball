@@ -101,7 +101,10 @@ rivalry_preferences <- list(
     "Texas Tech",
     "Tulsa",
     "Memphis",
-    "UTSA"
+    "UTSA",
+    "Texas State",
+    "Sam Houston",
+    "Tulane"
   ),
   "Michigan" = c(
     "Ohio State",
@@ -1322,7 +1325,6 @@ rivalry_preferences <- list(
     "McNeese",
     "Northwestern State",
     "Louisiana",
-    "Houston",
     "UL Monroe"
   ),
   "Northern Illinois" = c(

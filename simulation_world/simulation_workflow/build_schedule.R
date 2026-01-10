@@ -32,6 +32,7 @@ build_schedule <- function(
   # rivalry games
   rivalry_pref <- rivalry_preferences[[this_team]]
   rivalry_pref <- rivalry_pref[rivalry_pref %in% tier_tibble$team] # ensure scheduled teams are in FBS this year
+  rivalry_pref <- unique(rivalry_pref)
 
   if (!is.null(this_schedule)) {
     # teams already selected
@@ -113,7 +114,7 @@ replace_missing_games <- function(
   needed_games <- 12 - length(existing_games)
 
   # preference one: same region
-  new_games <- missing_games_tibble |>
+  tier_tibblenew_games <- missing_games_tibble |>
     filter(region == this_region, team %!in% c(existing_games, this_team)) |>
     slice(c(1:needed_games)) |>
     pull(team)

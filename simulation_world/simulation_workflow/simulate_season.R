@@ -57,6 +57,9 @@ simulate_season <- function(
   # compute standings for each region
   standings <- map(conference_results, ~ determine_standings(results, .x))
 
+  bind_rows(standings) |>
+    filter(wins < 0)
+
   # compute SOR for each team
   sor <- compute_sor(results, sp_rankings, home_field_advantage)
 
@@ -413,8 +416,8 @@ compute_tier_relegation_games <- function(
         filter(
           region == this_region,
           tier == this_tier,
-          rank > 12 - locks + protected_teams
-        )
+          team %!in% locked_teams) |>
+        slice_tail(n = locks - 4 - protected_teams)
     }
   ) |>
     pull(team)

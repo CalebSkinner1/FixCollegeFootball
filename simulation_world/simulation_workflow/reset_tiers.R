@@ -51,10 +51,10 @@ reset_tiers <- function(
 
   for (t in seq_len(max(final_standings$tier))) {
     reset_tier_list <- reset_this_tier(
-      locked_teams,
+      locked_teams = locked_teams,
       accelerated_teams = wild_cards,
       playoff_teams,
-      final_standings,
+      standings = final_standings,
       relegation_winners,
       relegation_losers,
       this_tier = t
@@ -122,7 +122,7 @@ reset_this_tier <- function(
 
   # spots vacated by teams accelerating up (usually by making cfp)
   vacated_spots <- standings |>
-    filter(team %in% accelerated_teams, tier == this_tier) |>
+    filter(team %in% accelerated_teams, tier == this_tier, tier != 1) |>
     group_by(region) |>
     summarize(empty = n())
 
@@ -147,8 +147,20 @@ reset_this_tier <- function(
     ~ {
       this_region <- .x$region[1]
       locks <- .x$locks[1]
+
+      # add teams that aren't moving in, but also can't drop
+      protected_teams <- standings |>
+        filter(
+          region == this_region,
+          team %in% accelerated_teams,
+          tier == this_tier,
+          tier == 1
+        ) |>
+        nrow()
+
       standings |>
-        filter(region == this_region, tier == this_tier, rank > 12 - locks)
+        filter(region == this_region, team %!in% locked_teams, tier == this_tier) |>
+        slice_tail(n = (locks - 4 - protected_teams))
     }
   ) |>
     pull(team)
