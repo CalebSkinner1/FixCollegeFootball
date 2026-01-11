@@ -117,7 +117,6 @@ tier_placement <- many_sims$tiers |>
   }
 
 # example:
-
 n_sims <- 100
 
 average_results <- multiple_simulations(n_sims, initial_tiers, sp_rankings, rivalry_preferences, regions)
