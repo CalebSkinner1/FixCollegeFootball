@@ -26,6 +26,7 @@ sp_rankings <- read_csv(
 
 # simulate seasons -------------------------------------------------------
 
+set.seed(123)
 # simulate every season - may take a few moments
 results_list <- simulate_years(
   initial_tiers,

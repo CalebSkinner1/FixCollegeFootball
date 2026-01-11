@@ -55,86 +55,93 @@ cfp_champs(results_list)$year_by_year |> print(n = 48)
 ```
 
     ## # A tibble: 48 × 3
-    ##    winner        runner_up       year
-    ##    <chr>         <chr>          <dbl>
-    ##  1 Ohio State    Miami           2025
-    ##  2 Texas         SMU             2024
-    ##  3 Oregon        Ole Miss        2023
-    ##  4 Michigan      Georgia         2022
-    ##  5 Georgia       Ohio State      2021
-    ##  6 Ohio State    Utah            2020
-    ##  7 Alabama       LSU             2019
-    ##  8 Georgia       Alabama         2018
-    ##  9 Auburn        Oklahoma        2017
-    ## 10 Penn State    Washington      2016
-    ## 11 Ohio State    Oklahoma        2015
-    ## 12 Alabama       Ole Miss        2014
-    ## 13 Florida State LSU             2013
-    ## 14 Georgia       Texas A&M       2012
-    ## 15 Wisconsin     USC             2011
-    ## 16 Ohio State    Alabama         2010
-    ## 17 LSU           Ohio State      2009
-    ## 18 Texas         Oklahoma        2008
-    ## 19 Ohio State    Tennessee       2007
-    ## 20 LSU           Florida         2006
-    ## 21 Ohio State    Texas           2005
-    ## 22 Texas         California      2004
-    ## 23 Iowa          Oklahoma        2003
-    ## 24 Maryland      Alabama         2002
-    ## 25 Miami         Florida         2001
-    ## 26 Georgia Tech  Florida         2000
-    ## 27 Florida State Penn State      1999
-    ## 28 Kansas State  Tennessee       1998
-    ## 29 Tennessee     Nebraska        1997
-    ## 30 Florida       Nebraska        1996
-    ## 31 Nebraska      Florida State   1995
-    ## 32 Florida State Penn State      1994
-    ## 33 Florida State Tennessee       1993
-    ## 34 Stanford      Florida State   1992
-    ## 35 Washington    Michigan        1991
-    ## 36 Miami         Washington      1990
-    ## 37 Florida State Notre Dame      1989
-    ## 38 USC           Oklahoma        1988
-    ## 39 LSU           Florida State   1987
-    ## 40 Penn State    Florida         1986
-    ## 41 Georgia Tech  Miami           1985
-    ## 42 Washington    Oklahoma State  1984
-    ## 43 Texas         Georgia         1983
-    ## 44 Penn State    Nebraska        1982
-    ## 45 Georgia       Pittsburgh      1981
-    ## 46 Alabama       Florida State   1980
-    ## 47 Ohio State    USC             1979
-    ## 48 USC           Alabama         1978
+    ##    winner            runner_up       year
+    ##    <chr>             <chr>          <dbl>
+    ##  1 Indiana           Texas Tech      2025
+    ##  2 Ole Miss          Ohio State      2024
+    ##  3 Michigan          Georgia         2023
+    ##  4 Michigan          Texas           2022
+    ##  5 Oklahoma State    Clemson         2021
+    ##  6 Oregon            Wisconsin       2020
+    ##  7 Alabama           Ohio State      2019
+    ##  8 Mississippi State Alabama         2018
+    ##  9 Alabama           Ohio State      2017
+    ## 10 Alabama           Clemson         2016
+    ## 11 Ohio State        Notre Dame      2015
+    ## 12 Alabama           Florida State   2014
+    ## 13 Alabama           Oregon          2013
+    ## 14 Alabama           USC             2012
+    ## 15 Alabama           Oklahoma        2011
+    ## 16 Oregon            Oklahoma State  2010
+    ## 17 Texas             Florida         2009
+    ## 18 Penn State        USC             2008
+    ## 19 West Virginia     Georgia         2007
+    ## 20 Louisville        LSU             2006
+    ## 21 Texas             LSU             2005
+    ## 22 Auburn            Louisville      2004
+    ## 23 LSU               Kansas State    2003
+    ## 24 Miami             USC             2002
+    ## 25 Colorado          Oklahoma        2001
+    ## 26 Virginia Tech     Florida         2000
+    ## 27 Florida State     Virginia Tech   1999
+    ## 28 Nebraska          Florida State   1998
+    ## 29 Florida State     Syracuse        1997
+    ## 30 Florida           Texas           1996
+    ## 31 Nebraska          Notre Dame      1995
+    ## 32 Michigan          Colorado        1994
+    ## 33 Nebraska          UCLA            1993
+    ## 34 Georgia           Alabama         1992
+    ## 35 Florida           Texas A&M       1991
+    ## 36 Tennessee         Miami           1990
+    ## 37 Notre Dame        Florida State   1989
+    ## 38 Florida State     USC             1988
+    ## 39 UCLA              Nebraska        1987
+    ## 40 Alabama           Oklahoma        1986
+    ## 41 Michigan          Oklahoma        1985
+    ## 42 Boston College    Ohio State      1984
+    ## 43 BYU               Georgia         1983
+    ## 44 Arizona State     Pittsburgh      1982
+    ## 45 Pittsburgh        North Carolina  1981
+    ## 46 USC               Alabama         1980
+    ## 47 USC               UCLA            1979
+    ## 48 Alabama           Oklahoma        1978
 
 ``` r
 cfp_champs(results_list)$champs_total |> print(n= 30)
 ```
 
-    ## # A tibble: 22 × 3
-    ##    winner        championships most_recent
-    ##    <chr>                 <int>       <dbl>
-    ##  1 Ohio State                7        2025
-    ##  2 Florida State             5        2013
-    ##  3 Georgia                   4        2021
-    ##  4 Texas                     4        2024
-    ##  5 Alabama                   3        2019
-    ##  6 LSU                       3        2009
-    ##  7 Penn State                3        2016
-    ##  8 Georgia Tech              2        2000
-    ##  9 Miami                     2        2001
-    ## 10 USC                       2        1988
-    ## 11 Washington                2        1991
-    ## 12 Auburn                    1        2017
-    ## 13 Florida                   1        1996
-    ## 14 Iowa                      1        2003
-    ## 15 Kansas State              1        1998
-    ## 16 Maryland                  1        2002
-    ## 17 Michigan                  1        2022
-    ## 18 Nebraska                  1        1995
-    ## 19 Oregon                    1        2023
-    ## 20 Stanford                  1        1992
-    ## 21 Tennessee                 1        1997
-    ## 22 Wisconsin                 1        2011
+    ## # A tibble: 29 × 3
+    ##    winner            championships most_recent
+    ##    <chr>                     <int>       <dbl>
+    ##  1 Alabama                       9        2019
+    ##  2 Michigan                      4        2023
+    ##  3 Florida State                 3        1999
+    ##  4 Nebraska                      3        1998
+    ##  5 Florida                       2        1996
+    ##  6 Oregon                        2        2020
+    ##  7 Texas                         2        2009
+    ##  8 USC                           2        1980
+    ##  9 Arizona State                 1        1982
+    ## 10 Auburn                        1        2004
+    ## 11 BYU                           1        1983
+    ## 12 Boston College                1        1984
+    ## 13 Colorado                      1        2001
+    ## 14 Georgia                       1        1992
+    ## 15 Indiana                       1        2025
+    ## 16 LSU                           1        2003
+    ## 17 Louisville                    1        2006
+    ## 18 Miami                         1        2002
+    ## 19 Mississippi State             1        2018
+    ## 20 Notre Dame                    1        1989
+    ## 21 Ohio State                    1        2015
+    ## 22 Oklahoma State                1        2021
+    ## 23 Ole Miss                      1        2024
+    ## 24 Penn State                    1        2008
+    ## 25 Pittsburgh                    1        1981
+    ## 26 Tennessee                     1        1990
+    ## 27 UCLA                          1        1987
+    ## 28 Virginia Tech                 1        2000
+    ## 29 West Virginia                 1        2007
 
 ## Playoff Appearances
 
@@ -143,60 +150,60 @@ cfp_champs(results_list)$champs_total |> print(n= 30)
 playoff_app(results_list) |> print(n=50)
 ```
 
-    ## # A tibble: 70 × 6
-    ##    team           appearances round_2 semis finals championships
-    ##    <chr>                <int>   <int> <int>  <int>         <int>
-    ##  1 Ohio State              31      24    12      9             7
-    ##  2 Florida State           23      20    16      9             5
-    ##  3 Georgia                 22      17     9      6             4
-    ##  4 Texas                   20      14     7      5             4
-    ##  5 Alabama                 29      23    12      7             3
-    ##  6 Penn State              22      18    11      5             3
-    ##  7 LSU                     15      12     6      5             3
-    ##  8 Miami                   25      21     9      4             2
-    ##  9 Washington              14      10     6      4             2
-    ## 10 USC                     18      11     5      4             2
-    ## 11 Georgia Tech             3       2     2      2             2
-    ## 12 Florida                 24      17    11      5             1
-    ## 13 Nebraska                20      16     9      4             1
-    ## 14 Tennessee               14       9     5      4             1
-    ## 15 Michigan                26      18    10      2             1
-    ## 16 Auburn                   7       6     5      1             1
-    ## 17 Oregon                   7       6     3      1             1
-    ## 18 Wisconsin                9       5     2      1             1
-    ## 19 Iowa                     8       4     2      1             1
-    ## 20 Stanford                 6       3     2      1             1
-    ## 21 Kansas State             9       5     1      1             1
-    ## 22 Maryland                 5       3     1      1             1
-    ## 23 Oklahoma                21      17     9      5             0
-    ## 24 Ole Miss                 5       2     2      2             0
-    ## 25 Oklahoma State           7       5     3      1             0
-    ## 26 Notre Dame              19      13     2      1             0
-    ## 27 Texas A&M               14       7     2      1             0
-    ## 28 Utah                     3       2     2      1             0
-    ## 29 Pittsburgh               7       5     1      1             0
-    ## 30 SMU                      4       2     1      1             0
-    ## 31 California               4       1     1      1             0
-    ## 32 Clemson                  9       7     3      0             0
-    ## 33 Missouri                 8       5     3      0             0
-    ## 34 Colorado                 6       4     3      0             0
-    ## 35 UCLA                    11       7     2      0             0
-    ## 36 Arizona State            6       5     2      0             0
-    ## 37 BYU                      6       5     2      0             0
-    ## 38 Arkansas                 9       4     1      0             0
-    ## 39 North Carolina           5       3     1      0             0
-    ## 40 West Virginia            5       3     1      0             0
-    ## 41 Boise State              4       3     1      0             0
-    ## 42 Syracuse                 5       2     1      0             0
-    ## 43 TCU                      3       2     1      0             0
-    ## 44 Northwestern             2       1     1      0             0
-    ## 45 Kansas                   1       1     1      0             0
-    ## 46 Michigan State           6       2     0      0             0
-    ## 47 Virginia Tech            4       2     0      0             0
-    ## 48 Cincinnati               2       2     0      0             0
-    ## 49 Texas Tech               6       1     0      0             0
-    ## 50 Louisville               4       1     0      0             0
-    ## # ℹ 20 more rows
+    ## # A tibble: 69 × 6
+    ##    team              appearances round_2 semis finals championships
+    ##    <chr>                   <int>   <int> <int>  <int>         <int>
+    ##  1 Alabama                    29      24    17     12             9
+    ##  2 Michigan                   26      19    11      4             4
+    ##  3 Florida State              28      25    13      6             3
+    ##  4 Nebraska                   21      16     9      4             3
+    ##  5 USC                        21      14    12      6             2
+    ##  6 Texas                      14      13     8      4             2
+    ##  7 Florida                    21      15     7      4             2
+    ##  8 Oregon                     13       9     3      3             2
+    ##  9 Ohio State                 31      23    13      5             1
+    ## 10 Georgia                    20      11     6      4             1
+    ## 11 Notre Dame                 21      14     6      3             1
+    ## 12 LSU                        10       7     4      3             1
+    ## 13 UCLA                       15       6     4      3             1
+    ## 14 Miami                      17      13     7      2             1
+    ## 15 Virginia Tech              11       5     4      2             1
+    ## 16 Pittsburgh                  6       5     4      2             1
+    ## 17 Louisville                  6       3     3      2             1
+    ## 18 Colorado                    5       4     2      2             1
+    ## 19 Oklahoma State              3       2     2      2             1
+    ## 20 Penn State                 24      18     6      1             1
+    ## 21 Auburn                     14      12     6      1             1
+    ## 22 Tennessee                  13      10     4      1             1
+    ## 23 Arizona State               8       5     1      1             1
+    ## 24 West Virginia               6       3     1      1             1
+    ## 25 Boston College              5       3     1      1             1
+    ## 26 BYU                         4       3     1      1             1
+    ## 27 Mississippi State           4       3     1      1             1
+    ## 28 Ole Miss                    3       2     1      1             1
+    ## 29 Indiana                     1       1     1      1             1
+    ## 30 Oklahoma                   27      18     7      5             0
+    ## 31 Clemson                    11       7     4      2             0
+    ## 32 Texas A&M                  10       6     2      1             0
+    ## 33 North Carolina              5       3     2      1             0
+    ## 34 Wisconsin                   9       5     1      1             0
+    ## 35 Kansas State                7       4     1      1             0
+    ## 36 Texas Tech                  5       3     1      1             0
+    ## 37 Syracuse                    4       3     1      1             0
+    ## 38 Washington                 15      10     2      0             0
+    ## 39 Arizona                     5       3     2      0             0
+    ## 40 TCU                         6       3     1      0             0
+    ## 41 Maryland                    5       3     1      0             0
+    ## 42 Boise State                 4       3     1      0             0
+    ## 43 Baylor                      4       2     1      0             0
+    ## 44 Houston                     4       2     1      0             0
+    ## 45 Stanford                    2       2     1      0             0
+    ## 46 Wyoming                     2       2     1      0             0
+    ## 47 Missouri                    5       1     1      0             0
+    ## 48 California                  2       1     1      0             0
+    ## 49 Purdue                      2       1     1      0             0
+    ## 50 James Madison               1       1     1      0             0
+    ## # ℹ 19 more rows
 
 ## Tier Journey - Baylor University
 
@@ -213,32 +220,35 @@ win_percentage(results_list, "Baylor")
 ```
 
     ## $opponents
-    ## # A tibble: 94 × 4
-    ##    opponent        wins losses games
-    ##    <chr>          <dbl>  <int> <int>
-    ##  1 Texas Tech        12     28    40
-    ##  2 Texas             14     23    37
-    ##  3 Texas A&M         10     26    36
-    ##  4 TCU               16     18    34
-    ##  5 Houston           22      8    30
-    ##  6 Oklahoma State     7     13    20
-    ##  7 SMU               10      9    19
-    ##  8 Utah               4     12    16
-    ##  9 Kansas             9      6    15
-    ## 10 Stanford           7      8    15
-    ## # ℹ 84 more rows
+    ## # A tibble: 95 × 4
+    ##    opponent          wins losses games
+    ##    <chr>            <dbl>  <int> <int>
+    ##  1 Texas Tech          19     20    39
+    ##  2 Texas               10     28    38
+    ##  3 TCU                 18     17    35
+    ##  4 Texas A&M           14     20    34
+    ##  5 Houston             14     13    27
+    ##  6 SMU                 10     12    22
+    ##  7 Oklahoma State       3     13    16
+    ##  8 San José State      11      4    15
+    ##  9 Washington State    10      5    15
+    ## 10 Tulsa               10      4    14
+    ## # ℹ 85 more rows
     ## 
     ## $game_type
-    ## # A tibble: 7 × 4
-    ##   type                  wins losses games
-    ##   <chr>                <dbl>  <int> <int>
-    ## 1 conference             159    177   336
-    ## 2 rivalry                 55     89   144
-    ## 3 inter-region            52     42    94
-    ## 4 relegation-defend       16     10    26
-    ## 5 relegation-challenge    11      8    19
-    ## 6 consolation              3      0     3
-    ## 7 makeup                   0      2     2
+    ## # A tibble: 10 × 4
+    ##    type                  wins losses games
+    ##    <chr>                <dbl>  <int> <int>
+    ##  1 conference             169    167   336
+    ##  2 rivalry                 58     84   142
+    ##  3 inter-region            54     33    87
+    ##  4 relegation-defend       11      9    20
+    ##  5 relegation-challenge     9     10    19
+    ##  6 makeup                   8      3    11
+    ##  7 consolation              2      3     5
+    ##  8 cfp-1R                   2      2     4
+    ##  9 cfp-2R                   1      1     2
+    ## 10 cfp-SF                   0      1     1
     ## 
     ## $year
     ## # A tibble: 48 × 6
@@ -246,14 +256,14 @@ win_percentage(results_list, "Baylor")
     ##    <dbl> <chr>  <dbl> <dbl>  <int> <int>
     ##  1  1978 west       3     7      6    13
     ##  2  1979 west       3    10      3    13
-    ##  3  1980 west       2     9      4    13
-    ##  4  1981 west       2     4      9    13
-    ##  5  1982 west       2     4      9    13
-    ##  6  1983 west       3     6      7    13
+    ##  3  1980 west       1     7      6    13
+    ##  4  1981 west       2     7      6    13
+    ##  5  1982 west       3     5      8    13
+    ##  6  1983 west       3     9      4    13
     ##  7  1984 west       3     8      5    13
-    ##  8  1985 west       2     6      7    13
-    ##  9  1986 west       3     7      6    13
-    ## 10  1987 west       3     7      6    13
+    ##  8  1985 west       2     9      4    13
+    ##  9  1986 west       1     3     10    13
+    ## 10  1987 west       2     1     12    13
     ## # ℹ 38 more rows
     ## 
     ## $tier
@@ -261,11 +271,11 @@ win_percentage(results_list, "Baylor")
     ## # Groups:   region, tier [5]
     ##   region  tier  wins losses games
     ##   <chr>  <dbl> <dbl>  <int> <int>
-    ## 1 west       1    26     39    65
-    ## 2 west       2    71     72   143
-    ## 3 west       3   115    119   234
-    ## 4 west       4    72     84   156
-    ## 5 west       5    12     14    26
+    ## 1 west       1    54     53   107
+    ## 2 west       2    39     65   104
+    ## 3 west       3   140     94   234
+    ## 4 west       4    35     30    65
+    ## 5 west       5    46     71   117
 
 # 100 Simulations:
 
