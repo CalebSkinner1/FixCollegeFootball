@@ -283,19 +283,8 @@ I simulate the 40+ years of college football history 100 times and
 display some of the summarized results:
 
 ``` r
-average_results <- read_csv("simulation_world/data/average_results.csv")
-```
+average_results <- read_csv("simulation_world/data/average_results.csv", show_col_types = FALSE)
 
-    ## Rows: 165 Columns: 12
-    ## ── Column specification ───────────────────────────────────────────────────────────────────────────────────────────
-    ## Delimiter: ","
-    ## chr  (1): team
-    ## dbl (11): seasons, championships, finals, semis, round_2, appearances, average_tier, win_percentage, games, win...
-    ## 
-    ## ℹ Use `spec()` to retrieve the full column specification for this data.
-    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-
-``` r
 average_results |> print(n=60)
 ```
 
