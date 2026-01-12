@@ -2,6 +2,7 @@
 # FixCollegeFootball
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+![R](https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white)
 
 College football needs a new structure. I propose a system that divides
 all FBS teams into three geographic regions (East, Central, and West),
