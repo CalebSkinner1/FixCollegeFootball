@@ -25,7 +25,7 @@ and two inter-regional matchups against teams in the same tier. A
 awarded to the top three teams in Tier 1 of each region. This structure
 guarantees representation from each region and rewards sustained success
 while preserving at-large flexibility. I further explain and and
-motivate this system in [this article](fix_college_football.pdf).
+motivate this system in [this article](college_football_relegation_system.pdf).
 
 In this Github Repository, I implement the proposed system through
 simulation beginning with the 1978 season, aligning with the start of
